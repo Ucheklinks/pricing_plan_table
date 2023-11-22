@@ -12,6 +12,7 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: center;
+  justify-content: space-around;
 }
 /* each pricing plan */
 .pricing-plan {
@@ -55,81 +56,56 @@ li{
   color: whitesmoke;
   border-radius: 5px;
   padding: 10px;
+  border: none;
+  
 }
 
 
 
 @media (max-width:480px){
-  .pricing-container{
+  .pricing-container {
     flex-direction: column;
-    gap:10px;
-    height: 130vh;
-    justify-content: space-around;
+    gap: 20px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top:  20px;
+    margin-bottom: 20px;
+    
+    
+    
   }
 
   .pricing-plan {
-  
-    background-color: aquamarine ;
-    border-radius: 5px;
-    text-align: center;
-    width: 310px;
-    flex-basis: 250px;
-    flex-shrink: 0;
-    
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 290px;
+    flex-basis: 290px;
+    padding: 0;
+    justify-content: center;
     
   }
 
   .plan-price{
     font-size: 2rem;
-    font-weight: bolder;
   }
+
+  
+  .plan-title{
+    
+    font-size: 20px;
+    margin-bottom: 10px;
+  
+  }
+
+
+ 
+  
 
  
 }
 
-@media (min-width:481px) and (max-width:1200px){
-  .pricing-container{
-    gap:5px;
-    justify-content: space-around;
-  }
-
-  .pricing-plan {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: aquamarine ;
-    border-radius: 5px;
-    text-align: center;
-    flex-basis: 270px;
-    height: 300px;
-
-  }
 
 
-  .plan-price{
-    font-size: 1.5rem;
-    font-weight: bolder;
-  }
 
-  .plan-button{
-    background-color: 
-    #8b3dff;
-    color: whitesmoke;
-    border-radius: 5px;
-    padding: 10px;
-    align-self: center;
-    
-    
-  }
-
-}
-
-@media (min-width:1201px) and (max-width:1600px){
-  .pricing-container{
-    gap:5px;
-    justify-content: space-around;
-  }
-
-}
